@@ -1,0 +1,61 @@
+/* One decorative film in the hero, without player controls or captions. */
+.hero{height:clamp(680px,56.25vw,1080px);min-height:680px;max-height:none;background:#08142a;isolation:isolate}
+.hero-film-frame,.hero-poster,.hero-film{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero-poster img,.hero-film{width:100%;height:100%;object-fit:contain;object-position:center}
+.hero-film{opacity:0}
+.film-ready .hero-film{opacity:1}
+.film-ready .hero-poster{opacity:0}
+.hero-shade{z-index:1;background:linear-gradient(90deg,#061126ee 0%,#07152cce 28%,#08162a4d 52%,#07142a05 75%),linear-gradient(0deg,#071327fa 0%,#07132799 13%,transparent 36%,#0713271a 80%,#07132788 100%)}
+.hero:after{content:'';position:absolute;bottom:0;left:0;width:100%;height:12px;background:#060d1b;z-index:5;pointer-events:none}
+.hero-copy{padding-top:185px;animation:copy-enter 1.2s var(--ease) both}
+.hero-copy .eyebrow{font-size:9px;letter-spacing:.24em}
+.hero h1{font-size:clamp(108px,9.1vw,148px);line-height:.86;margin-top:29px}
+.hero h1 em{margin-left:44px;margin-top:8px}
+.hero-tagline{margin-top:31px;font-size:30px}
+.hero-description{color:#d2d7df;max-width:360px;line-height:1.9}
+.hero-actions{margin-top:27px}
+.hero-side-note{display:none}
+.hero .scroll-cue{bottom:20px}
+@media(min-width:1101px) and (max-width:1400px){.hero-copy{padding-top:145px}}
+/* Tablet keeps the film behind the copy, rather than stacking two sections. */
+@media(min-width:561px) and (max-width:1100px){
+ .hero{height:clamp(680px,78vw,820px);min-height:680px}
+ .hero-copy{width:46%;margin-left:7%;padding-top:145px}
+ .hero-film,.hero-poster img{object-fit:cover;object-position:center}
+ .hero h1{font-size:clamp(72px,10.3vw,112px)}
+ .hero h1 em{margin-left:20px}
+ .hero-tagline{font-size:27px;margin-top:26px}
+ .hero-description{font-size:12px;max-width:310px;line-height:1.85}
+ .hero-actions{flex-direction:row;align-items:center;gap:17px;margin-top:23px}
+ .hero-actions .button{padding:14px 17px;font-size:10px;gap:15px}
+ .hero-actions .text-link{font-size:10px;gap:10px}
+ .hero .edition-note{font-size:8px}
+ .hero-shade{background:linear-gradient(90deg,#061126ed 0%,#07152cb0 36%,#08162a12 75%),linear-gradient(0deg,#071327fc 0%,#07132799 13%,transparent 42%,#07132766 100%)}
+ .hero .scroll-cue{display:none}
+}
+@media(min-width:561px) and (max-width:700px){
+ .hero-copy{width:49%;padding-top:140px}
+ .hero h1{font-size:70px}
+ .hero-tagline{font-size:24px}
+ .hero-actions{flex-wrap:wrap;gap:5px 16px}
+ .hero-copy .eyebrow{font-size:7px;letter-spacing:.13em}
+}
+@media(max-width:560px){
+ .hero{height:clamp(900px,233.333vw,1140px);min-height:900px;max-height:none;padding-bottom:0}
+ .hero-copy{padding-top:120px;width:86%;margin-left:7%}
+ .hero-copy .eyebrow{font-size:7px;letter-spacing:.17em}
+ .hero h1{font-size:clamp(72px,21vw,108px);line-height:.86;margin-top:27px}
+ .hero h1 em{margin-left:12%;margin-top:9px}
+ .hero-tagline{margin-top:25px;font-size:27px}
+ .hero-description{font-size:12px;max-width:310px;line-height:1.85;margin-top:12px}
+ .hero-actions{flex-direction:row;align-items:center;margin-top:23px;gap:17px}
+ .hero-actions .button{font-size:10px;padding:13px 17px;min-height:47px;gap:15px}
+ .hero-actions .text-link{font-size:10px;gap:10px}
+ .hero .edition-note{font-size:8px;margin-top:18px}
+ .hero-film,.hero-poster img{object-fit:cover;object-position:center bottom}
+ .hero-shade{background:linear-gradient(180deg,#061327aa 0%,#06132799 46%,transparent 64%,#06132722 78%,#061327ee 100%)}
+ .hero .scroll-cue{display:none}
+ .hero:after{height:8px}
+}
+@media(max-width:360px){.hero-actions{gap:11px}.hero-actions .button{padding:13px 12px}.hero-description{max-width:275px}}
+@media(prefers-reduced-motion:reduce){.hero-copy{animation:none}}
