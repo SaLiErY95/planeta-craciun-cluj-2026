@@ -2,7 +2,7 @@
 
 Site public: https://saliery95.github.io/planeta-craciun-cluj-2026/
 
-Versiune statică pentru GitHub Pages, exportată din proiectul Planeta Crăciun (sursă `b9fb019b4033460b27e58186d76d508708bfbd51`). Include programul atelierelor, harta interactivă și materialele video pentru desktop și mobil.
+Versiune statică pentru GitHub Pages, exportată din proiectul Planeta Crăciun (sursă `509d030b6296d45fc9be9f1df08a4a9a2081f941`). Include programul atelierelor, harta interactivă și materialele video pentru desktop și mobil.
 
 GitHub Pages publică ramura `main`, directorul rădăcină `/`. Fișierul `.nojekyll` păstrează fișierele statice fără procesare Jekyll. Resursele sunt relative, astfel încât site-ul funcționează în subdirectorul repository-ului.
 
@@ -33,3 +33,5 @@ Secțiunea [Regulamente](https://saliery95.github.io/planeta-craciun-cluj-2026/#
 Paginile de citire sunt în `regulamente/`, originalele în `assets/regulations/`. Aceste copii sunt actualizate din proiectul principal la publicare și nu se sincronizează automat cu Drive. Materialele de grafică din 2025 nu sunt folosite ca regulament pentru 2026.
 
 Programul este împărțit în Muzică, Căsuța Moșului, Momente speciale, Campanii și Atracții. Calendarul atelierelor arată câte o zi, păstrând toate cele 34 de date. Orele și tarifele neanunțate sunt marcate explicit.
+
+Tarifele confirmate se afișează în Program → Atracții: roata 30 lei/persoană, carusel copii 20 lei/persoană, sania VR 30 sau 40 lei după traseu. Jocul cu mingi: 1 joc/1 minge 20 lei, 3 jocuri/3 mingi 50 lei, 7 jocuri/7 mingi 100 lei. Tariful photobooth-ului urmează să fie anunțat.

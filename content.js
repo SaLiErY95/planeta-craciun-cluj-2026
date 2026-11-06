@@ -454,5 +454,21 @@ window.PLANETA.visit = {
     "Sania VR a Moșului",
     "Joc de îndemânare cu premii",
     "Photobooth"
-  ]
+  ],
+  "attractionPrices": {
+    "Roata panoramică": [
+      "30 lei/persoană"
+    ],
+    "Carusel": [
+      "20 lei/persoană"
+    ],
+    "Sania VR a Moșului": [
+      "30 sau 40 lei, în funcție de traseul ales."
+    ],
+    "Joc de îndemânare cu premii": [
+      "1 joc / 1 minge — 20 lei",
+      "3 jocuri / 3 mingi — 50 lei",
+      "7 jocuri / 7 mingi — 100 lei"
+    ]
+  }
 };

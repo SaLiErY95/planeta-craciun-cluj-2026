@@ -19,7 +19,7 @@ function eventRow(e) {
 }
 function infoCard(title,description,label) {
   const card=text('article','','agenda-card');if(label)card.append(text('p',t(label),'event-kind'));
-  card.append(text('h3',t(title)),text('p',t(description)));return card;
+  card.append(text('h3',t(title)));if(description)card.append(text('p',t(description)));return card;
 }
 function renderProgram() {
   const target=$('#program-results'),date=$('#program-date').value,visit=data.visit;
@@ -55,7 +55,13 @@ function renderProgram() {
     note='Revenim în curând cu detaliile campaniilor și modul de participare.';
   }
   if(category==='attractions') {
-    const grid=text('div','','agenda-grid');visit.attractions.forEach(name=>grid.append(infoCard(name,'Tariful va fi anunțat în curând.','Piața Unirii')));target.append(grid);
+    const grid=text('div','','agenda-grid');
+    visit.attractions.forEach(name=>{
+      const prices=visit.attractionPrices[name];
+      const card=infoCard(name,prices?null:'Tariful va fi anunțat în curând.','Piața Unirii');
+      if(prices){const list=text('ul','','attraction-prices');prices.forEach(price=>list.append(text('li',t(price))));card.append(list);}
+      grid.append(card);
+    });target.append(grid);
     note='Accesul în târg este gratuit. Atracțiile pot avea tarife separate.';
   }
   $('#program-note').textContent=t(note);
