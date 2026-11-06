@@ -360,6 +360,7 @@ window.PLANETA = {
 };
 
 // Website updates from the graphics group, 5–6 November 2026.
+// Stage dates/start times: PLANETA CRACIUN - 2026, Booking!H4:L33.
 window.PLANETA.visit = {
   "concerts": [
     {
@@ -384,6 +385,27 @@ window.PLANETA.visit = {
       "type": "concert"
     },
     {
+      "date": "2026-11-28",
+      "title": "Mircea Baniciu",
+      "time": "20:15",
+      "location": "Scena principală",
+      "type": "concert"
+    },
+    {
+      "date": "2026-12-05",
+      "title": "Zodier",
+      "time": "20:15",
+      "location": "Scena principală",
+      "type": "concert"
+    },
+    {
+      "date": "2026-12-06",
+      "title": "Fuego",
+      "time": "20:15",
+      "location": "Scena principală",
+      "type": "concert"
+    },
+    {
       "date": "2026-12-11",
       "title": "The Urs",
       "time": "20:15",
@@ -393,6 +415,13 @@ window.PLANETA.visit = {
     {
       "date": "2026-12-12",
       "title": "Azur",
+      "time": "20:15",
+      "location": "Scena principală",
+      "type": "concert"
+    },
+    {
+      "date": "2026-12-18",
+      "title": "Noua Unșpe",
       "time": "20:15",
       "location": "Scena principală",
       "type": "concert"

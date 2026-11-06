@@ -2,7 +2,7 @@
 
 Site public: https://saliery95.github.io/planeta-craciun-cluj-2026/
 
-Versiune statică pentru GitHub Pages, exportată din proiectul Planeta Crăciun (sursă `fdc405dbb79a8917ebd470199e8be574155fa5e0`). Include programul atelierelor, harta interactivă și materialele video pentru desktop și mobil.
+Versiune statică pentru GitHub Pages, exportată din proiectul Planeta Crăciun (sursă `b9fb019b4033460b27e58186d76d508708bfbd51`). Include programul atelierelor, harta interactivă și materialele video pentru desktop și mobil.
 
 GitHub Pages publică ramura `main`, directorul rădăcină `/`. Fișierul `.nojekyll` păstrează fișierele statice fără procesare Jekyll. Resursele sunt relative, astfel încât site-ul funcționează în subdirectorul repository-ului.
 
