@@ -28,6 +28,8 @@ Datele și orele activităților sunt comune tuturor limbilor. Orele neconfirmat
 
 ## Regulamente de participare
 
-Secțiunea [Regulamente](https://saliery95.github.io/planeta-craciun-cluj-2026/#regulamente) oferă documentele furnizate de organizator în română, engleză, italiană, germană și maghiară. Regulamentul integral apare automat la finalul paginii, în limba site-ului, cu un link de descărcare a originalului DOCX, păstrat nemodificat. Documentul francez nu a fost furnizat; pagina franceză afișează explicit varianta engleză, cu o notă în franceză.
+Secțiunea [Regulamente](https://saliery95.github.io/planeta-craciun-cluj-2026/#regulamente) oferă documentele furnizate de organizator în română, engleză, franceză, germană și maghiară. Regulamentul integral apare automat la finalul paginii, în limba site-ului, cu un link de descărcare a originalului DOCX, păstrat nemodificat. Documentul francez furnizat de organizator este afișat integral pe pagina franceză.
 
 Paginile de citire sunt în `regulamente/`, originalele în `assets/regulations/`. Aceste copii sunt actualizate din proiectul principal la publicare și nu se sincronizează automat cu Drive. Materialele de grafică din 2025 nu sunt folosite ca regulament pentru 2026.
+
+Programul este împărțit în Muzică, Căsuța Moșului, Momente speciale, Campanii și Atracții. Calendarul atelierelor arată câte o zi, păstrând toate cele 34 de date. Orele și tarifele neanunțate sunt marcate explicit.
