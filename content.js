@@ -358,3 +358,72 @@ window.PLANETA = {
     privacy: { label:'DESPRE ACEASTĂ VERSIUNE', title:'Datele tale rămân ale tale.', text:'Această versiune nu conține formulare de înscriere, analytics, pixeli de marketing sau module de social media.', note:'Politica completă de confidențialitate și datele operatorului trebuie completate înaintea lansării publice. Infrastructura de găzduire poate procesa date tehnice necesare furnizării site-ului.' }
   }
 };
+
+// Website updates from the graphics group, 5–6 November 2026.
+window.PLANETA.visit = {
+  "concerts": [
+    {
+      "date": "2026-11-20",
+      "title": "Smiley",
+      "time": "20:15",
+      "location": "Scena principală",
+      "type": "concert"
+    },
+    {
+      "date": "2026-11-21",
+      "title": "Grasu XXL",
+      "time": "20:15",
+      "location": "Scena principală",
+      "type": "concert"
+    },
+    {
+      "date": "2026-11-27",
+      "title": "Damian & Brothers",
+      "time": "20:15",
+      "location": "Scena principală",
+      "type": "concert"
+    },
+    {
+      "date": "2026-12-11",
+      "title": "The Urs",
+      "time": "20:15",
+      "location": "Scena principală",
+      "type": "concert"
+    },
+    {
+      "date": "2026-12-12",
+      "title": "Azur",
+      "time": "20:15",
+      "location": "Scena principală",
+      "type": "concert"
+    },
+    {
+      "date": "2026-12-19",
+      "title": "Ilinca",
+      "time": "20:15",
+      "location": "Scena principală",
+      "type": "concert"
+    }
+  ],
+  "showTimes": [
+    "17:00–17:10",
+    "19:00–19:10",
+    "20:00–20:10",
+    "21:30–21:40"
+  ],
+  "special": [
+    "Crăiasa Zăpezii",
+    "Povești la gura sobei"
+  ],
+  "campaigns": [
+    "We Help",
+    "Capace cu suflet"
+  ],
+  "attractions": [
+    "Roata panoramică",
+    "Carusel",
+    "Sania VR a Moșului",
+    "Joc de îndemânare cu premii",
+    "Photobooth"
+  ]
+};
