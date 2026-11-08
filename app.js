@@ -26,6 +26,7 @@ function renderProgram() {
   target.replaceChildren();target.setAttribute('aria-labelledby','tab-'+category);
   target.classList.toggle('concert-grid',category==='music');
   $('#program-days').hidden=category!=='kids';
+  $('#program-house-hours').hidden=category!=='kids';
   $('#program-prev').disabled=!date||date<='2026-11-20';$('#program-next').disabled=!date||date>='2026-12-23';
   let note='Programul se completează pe parcurs. Revino pentru noutăți.';
   if(category==='music') visit.concerts.forEach(e=>target.append(eventRow(e)));
@@ -33,21 +34,26 @@ function renderProgram() {
     const events=data.events.filter(e=>e.date===date);
     events.forEach(e=>target.append(eventRow(e)));
     if(!events.length)target.append(infoCard('Niciun eveniment pentru selecția ta.','Alege o zi între 20 noiembrie și 23 decembrie.'));
-    note='Ateliere pentru cei mici și nu numai, în Căsuța Moșului. Orele vor fi anunțate ulterior.';
+    note='Ateliere pentru cei mici și nu numai. Orele întâlnirilor cu Moș Crăciun vor fi anunțate separat.';
   }
   if(category==='special') {
     const show=text('article','','lights-show');
     const figure=document.createElement('figure'),image=document.createElement('img');
     image.src='assets/lights-carols-2025.webp';image.alt=t('Cupola de lumini din Piața Unirii, la ediția 2025');image.width=1280;image.height=1094;image.loading='lazy';
     figure.append(image,text('figcaption',t('Imagine din ediția 2025')));
-    const copy=text('div','','lights-copy');copy.append(text('p',t('Cupola de lumini'),'event-kind'),text('h3','LIGHTS & CAROLS SHOW'),text('p',t('Spectacol imersiv de lumini, sincronizat cu o coloană sonoră de colinde.')));
+    const copy=text('div','','lights-copy');copy.append(text('p',t('Cupola de lumini'),'event-kind'),text('h3','LIGHTS & CAROL SHOW'),text('p',t('Spectacol imersiv de lumini, sincronizat cu o coloană sonoră de colinde.')));
     const times=document.createElement('ul');times.className='show-times';
     visit.showTimes.forEach(value=>times.append(text('li',value)));copy.append(times);show.append(figure,copy);target.append(show);
     const grid=text('div','','agenda-grid');
     const santa=infoCard('Întâlniri cu Moș Crăciun','În Căsuța Moșului. Orele vor fi anunțate ulterior.');
     const dates=document.createElement('ul');dates.className='santa-dates';
     data.events.filter(e=>e.type==='meeting').forEach(e=>{const li=document.createElement('li'),time=text('time',new Date(e.date+'T12:00:00').toLocaleDateString(language.locale,{day:'numeric',month:'long'}));time.dateTime=e.date;li.append(time);dates.append(li);});santa.append(dates);grid.append(santa);
-    visit.special.forEach(name=>grid.append(infoCard(name,'Datele și orele vor fi anunțate în curând.')));target.append(grid);
+    visit.special.forEach(event=>{
+      const card=infoCard(event.title,null),dates=document.createElement('ul');dates.className='special-dates';
+      card.append(text('p',event.time,'event-time'));
+      event.dates.forEach(date=>{const li=document.createElement('li'),time=text('time',new Date(date+'T12:00:00').toLocaleDateString(language.locale,{day:'numeric',month:'long',year:'numeric'}));time.dateTime=date;li.append(time);dates.append(li);});
+      card.append(dates);grid.append(card);
+    });target.append(grid);
   }
   if(category==='campaigns') {
     const grid=text('div','','agenda-grid');

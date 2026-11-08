@@ -28,3 +28,5 @@ body.rules-page{margin:0;background:#f7f3e9;color:#13283b;font-family:Manrope,Ar
 .rules-originals nav{display:flex;flex-wrap:wrap;gap:8px 12px}
 .rules-originals a{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;border:1px solid #b2986655;border-radius:4px;font-size:12px;text-decoration:none}
 @media(max-width:560px){.rules-inline{font-size:13px;margin-top:26px;padding-top:24px}.rules-inline h3,.rules-inline h4{font-size:17px}.regulations-section .rules-download{font-size:12px}.rules-language-note{padding:12px 14px}}
+
+.rules-schedule-note{max-width:900px;margin:0 0 22px;padding:16px 18px;background:#f7f3e9;border-left:3px solid #b29866}.rules-schedule-note a{text-decoration:underline;text-underline-offset:3px;font-weight:600}
